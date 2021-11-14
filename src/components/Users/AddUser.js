@@ -38,4 +38,17 @@ const AddUser = (props) => {
           onChange={userNameChangeHandler}
           value={userName}
         ></input>
-        <label htmlFor="a
+        <label htmlFor="age">Age(years)</label>
+        <input
+          id="age"
+          type="number"
+          onChange={ageChangeHandler}
+          value={userAge}
+        ></input>
+        <Button type="submit">Add User</Button>
+      </form>
+    </Card>
+  );
+};
+
+export default AddUser;
